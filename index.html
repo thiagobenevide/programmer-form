@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form-style.css">
+    <title>Formulário</title>
+</head>
+<body>
+    <main>
+        <form>
+            <h1>Formulário de Programadores</h1>
+            <h2>Dados Pessoais</h2>
+            <fieldset id="personal-data">
+
+                <div id="input-username">
+
+                    <div class="input-data">
+                        <label for="user-name" class="label" >Nome</label>
+                        <input type="text" name="user-name" id="user-name" class="input">
+                    </div>
+
+                    <div class="input-data">
+                        <label for="user-firsh-name" class="label">Sobrenome</label>
+                        <input type="text" name="user-firsh-name" id="user-firsh-name" class="input">
+                    </div>
+                </div>
+
+                <div id="input-useremail" class="input-data">
+                    <label for="user-email" class="label">E-mail</label>
+                    <input type="email" name="user-email" id="user-email" class="input">
+                </div>
+
+                <div id="input-userlocation">
+                    <div class="input-data">
+                        <label for="user-country" class="label">Pais</label>
+                        <input type="text" name="user-country" id="user-country" class="input" ></input>
+                    </div>
+
+                    <div class="input-data">
+                        <label for="user-stade" class="label">Estado</label>
+                        <input type="text" name="user-stade" id="user-stade" class="input"></input>
+                    </div>
+
+                    <div class="input-data">
+                        <label for="user-city" class="label">Cidade</label>
+                        <input type="text" id="user-city" name="user-city" class="input">
+                    </div>
+                </div>
+            </fieldset>
+
+            <h2>Fundamentos</h2>
+            <fieldset id="fundamentals">
+                <div class="fundamentals-div">
+                    <label>Você já estudou algoritmos?</label>
+
+                    <label for="studied-algorithms-yes">
+                        <input type="radio" name="studied-algorithms" id="studied-algorithms-yes" value="yes" checked>Sim
+                    </label>
+
+                    <label for="studied-algorithms-no">
+                        <input type="radio" name="studied-algorithms" id="studied-algorithms-no" value="no">Não
+                    </label>
+                </div>
+                
+                <div>
+                    <label>
+                        Você já estudou estrutura de dados?
+                    </label>
+
+                    <label for="studied-data-structure-yes">
+                        <input type="radio" name="studied-data-structure" id="studied-data-structure-yes" value="yes" checked>Sim
+                    </label>
+
+                    <label for="studied-data-structure-no">
+                        <input type="radio" name="studied-data-structure" id="studied-data-structure-no" value="no">Não
+                    </label>
+
+                </div>
+            </fieldset>
+
+            <h2>Estudos Acadêmicos</h2>
+
+            <fieldset id="academic-studies">
+                <div id="academic-studies-one">
+                    <label>Como você aprende programação?</label>
+
+                    <label for="college">
+                        <input type="radio" name="academic-studies-one" id="college">Faculdade
+                    </label>
+
+                    <label for="technical-course">
+                        <input type="radio" name="academic-studies-one" id="technical-course">Curso Técnico
+                    </label>
+
+                    <label for="own-account">
+                        <input type="radio" id="own-account">Conta Própria
+                    </label>
+                </div>
+
+                <div id="academic-studies-two">
+                    <label for="user-college">Qual faculdade você faz ou desejaria fazer?</label>
+                    <input type="text" id="user-college">
+                </div>
+
+                <div id="academic-studies-three">
+                    <label>O que você faz na área de programação hoje?</label>
+
+                    <label for="user-exercises-study">
+                        <input type="radio" id="user-exercises-study" >Estuda
+                    </label>
+
+                    <label for="user-exercises-internship">
+                        <input type="radio" name="academic-studies" id="user-exercises-internship" >Estágio
+                    </label>
+
+                    <label for="user does work">
+                        <input type="radio" name="academic-studies" id="user does work" >Trabalha
+                    </label>
+                </div>
+            </fieldset>
+
+            <h2>Nível de Aprendizado e Conhecimento</h2>
+
+            <fieldset id="knowledge-level">
+                <div>
+                    <label>Qual o seu nível de conhecimento?</label>
+                    <label for="student-level">
+                        <input type="radio" name="knowledge-level" id="student-level">Estudante
+                    </label>
+
+                    <label for="junior-level">
+                        <input type="radio" name="knowledge-level" id="junior-level">Júnior
+                    </label>
+
+                    <label for="full-level">
+                        <input type="radio" name="knowledge-level" id="full-level">Pleno
+                    </label>
+
+                    <label for="senior-level">
+                        <input type="radio" name="knowledge-level" 
+                        id="senior-level"
+                        >Sênior
+                    </label>
+                </div>
+            </fieldset>
+            <h2>Opinião</h2>
+            <fieldset id="opinion">
+                <div class="opinions">
+                    <label for="opinion-one">O que você tem a dizer sobre a área de programação de forma geral?</label>
+                    <textarea name="opinion-one" id="opinion-one" cols="5" rows="10"></textarea>
+                </div>
+
+                <div class="opinions">
+                    <label for="opinion-two">O que você tem a dizer para pessoas que estão iniciando hoje? Se você está iniciando hoje, quais são suas principais dúvidas e medos?</label>
+                    <textarea name="opinion-two" id="opinion-two" cols="5" rows="10"></textarea>
+                </div>
+            </fieldset>
+            <div>
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <h3>Desenvolvido e Criado por <a href="#" id="link-created">Thiago Benevide</a></h3>
+    </footer>
+</body>
+</html>

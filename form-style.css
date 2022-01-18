@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: #659DE9;
+}
+
+main {
+    width: 100%;
+    max-width: 980px;
+    margin: auto;
+    margin-top: 30px;
+
+    background-color: #fff;
+    padding: 3rem;
+    border-radius: 20px;
+    
+}
+
+
+h1 {
+    text-align: center;
+    width: 100%;
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin: 20px 0px 20px 0px;
+}
+
+#personal-data{
+    padding: 20px 0px 20px 0px;
+    border: 0;
+}
+
+/*Personal Data*/
+
+#input-username {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
+#input-userlocation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.input-data {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.label {
+    color: #000;
+    font-size: 1.5rem;
+    margin-left: 15px;
+    margin-bottom: 4px;
+}
+
+.input {
+    border-radius: 200px;
+    padding: 5px 10px 5px 10px;
+    font-size: 1.8rem;
+    box-shadow: 1px 3px rgba(0, 0, 0, 0.13);
+    border: 0;
+    background-color: #F6F6F6;
+}
+
+.select {
+    width: 30rem;
+    padding: 5px 10px 5px 10px;
+    border-radius: 200px;
+    font-size: 1.8rem;
+    background-color: #F6F6F6;
+    box-shadow: 1px 3px rgba(0, 0, 0, 0.13);
+    border: 0;
+}
+
+/*Fundamentals User*/
+
+#fundamentals {
+    padding: 20px;
+    border: 0;
+    border-radius: 20px;
+    box-shadow: 1px 3px rgba(0, 0, 0, 0.13);
+    font-size: 1.8rem;
+    background-color: #F6F6F6;
+}
+
+.fundamentals-div {
+    margin-bottom: 10px;
+}
+
+/*academic-studies*/
+
+#academic-studies{
+    background-color: #F6F6F6;
+    border-radius: 20px;
+    border: 0;
+    box-shadow: 1px 3px rgba(0, 0, 0, 0.13);
+    padding: 20px;
+    font-size: 1.8rem;
+
+}
+
+#academic-studies-one {
+    margin-bottom: 10px;
+}
+
+
+#academic-studies-two {
+    margin-bottom: 10px;
+}
+
+#user-college {
+    width: 300px;
+    font-size: 1.8rem;
+}
+
+/*knowledge-level*/
+
+#knowledge-level {
+    background-color: #F6F6F6;
+    border-radius: 20px;
+    border: 0;
+    box-shadow: 1px 3px rgba(0, 0, 0, 0.13);
+    padding: 20px;
+    font-size: 1.8rem;
+}
+
+/*opinion*/
+
+#opinion {
+    background-color: #F6F6F6;
+    border-radius: 20px;
+    border: 0;
+    box-shadow: 1px 3px rgba(0, 0, 0, 0.13);
+    padding: 20px;
+    font-size: 1.8rem;
+}
+
+.opinions{
+    display: flex;
+    flex-direction: column;
+}
+
+#opinion-one,#opinion-two {
+
+    padding: 5px;
+}
+
+form > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+button {
+    font-size: 1.6rem;
+    background-color: #F6F6F6;
+    padding: 10px 30px 10px 30px;
+    border: 0;
+    border-radius: 20px;
+    box-shadow: 1px 3px rgba(0, 0, 0, 0.13);
+    
+}
+
+button:hover {
+    background-color: #d3d3d3;
+}
+
+footer {
+    background-color: #F6F6F6;
+    margin-top: 50px;
+    text-align: center;
+    padding: 10px;
+}
+
+h3 {
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+a{
+    text-decoration: none;
+    font-weight: 700;
+    color: #000;
+}
+
+@media (max-width: 1070px){
+    html {
+        font-size: 50%;
+    }
+    
+    main {
+        width: 800px;
+    }
+}
+
+@media (max-width: 880px){
+    main {
+        width: 600px;
+    }
+    
+    .select {
+        width: 10rem;
+    }
+}
+
+@media (max-width: 675px){
+    main {
+        width: 450px;
+    }
+
+    #academic-studies-one,#academic-studies-three,#knowledge-level div{
+        display: flex;
+        flex-direction: column;
+
+    }
+}
+
+@media (max-width:550px){
+    html {
+        font-size: 45%;
+    }
+    
+    main {
+        width: 300px
+    }
+    #fundamentals > div{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #input-username,#input-useremail,#input-userlocation,.select{ 
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+    }
+
+    #user-college{
+        width: 200px;
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 400px){
+    main {
+        width: 250px;
+    }
+    #input-username,#input-useremail,#input-userlocation,.select{ 
+        display: flex;
+        flex-direction: column;
+        width: 250px;
+    }
+}
+
